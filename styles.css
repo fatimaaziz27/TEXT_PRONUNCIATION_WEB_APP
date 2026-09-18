@@ -5,116 +5,55 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e1b4b);
-    color: white;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 20px;
 }
 
 .box {
-    width: 100%;
-    max-width: 550px;
-
-    padding: 30px;
     background: #1e293b;
-
-    border: 1px solid #334155;
-    border-radius: 16px;
+    padding: 30px;
+    border-radius: 15px;
 
     display: flex;
-    gap: 12px;
+    gap: 10px;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 input {
-    flex: 1;
+    width: 300px;
+    padding: 12px 15px;
 
-    padding: 14px 16px;
-
-    border: 2px solid #475569;
+    border: none;
     outline: none;
-    border-radius: 10px;
-
-    background: #f8fafc;
-    color: #111827;
+    border-radius: 8px;
 
     font-size: 16px;
-}
-
-input:focus {
-    border-color: #818cf8;
+    color: #111;
 }
 
 input::placeholder {
-    color: #64748b;
+    color: #777;
 }
 
 button {
-    padding: 14px 22px;
+    padding: 12px 20px;
 
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
 
     background: #6366f1;
     color: white;
 
     font-size: 16px;
-    font-weight: bold;
-
     cursor: pointer;
-
-    transition: 0.3s;
 }
 
 button:hover {
-    background: #818cf8;
-    transform: translateY(-2px);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
-
-/* Responsive Design */
-
-@media (max-width: 600px) {
-
-    .box {
-        padding: 20px;
-        flex-direction: column;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    button {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 350px) {
-
-    body {
-        padding: 10px;
-    }
-
-    .box {
-        padding: 15px;
-    }
-
-    input,
-    button {
-        font-size: 14px;
-        padding: 12px;
-    }
+    background: #4f46e5;
 }
